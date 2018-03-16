@@ -1,0 +1,17 @@
+0.2
+---
+
+- Added timelapse support
+- Added persistent storage of settings and pictures
+
+
+0.1
+---
+
+- Added Archive
+
+
+0.0
+---
+
+-  Initial version
