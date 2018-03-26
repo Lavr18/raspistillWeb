@@ -35,9 +35,7 @@ from datetime import *
 from PIL import Image
 ##from bqapi.bqclass import fromXml
 #import bqapi as zzz
-from bqapi.comm import BQSession#, BQCommError
-from bqapi.util import save_blob
-from lxml import etree
+
 from time import time
 from socket import gethostname
 import picamera
@@ -120,7 +118,7 @@ starttime = 0
 # Path to the autostart folder
 autostart_location = "/home/pi/.config/lxsession/LXDE-pi/autostart"
 path_to_autostart_script = os.path.abspath(os.path.dirname(__file__)) + "/scripts/autostart.sh"
-line = "@bash " + path_to_autostart_script
+line = "@bash " + path_to_autostart_script + " " + os.path.abspath(os.path.dirname(__file__))
 
 preferences_fail_alert = []
 preferences_success_alert = False
