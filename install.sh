@@ -8,8 +8,9 @@ bin/pip install --upgrade setuptools
 
 
 #Develop raspistillWeb
-bin/python setup.py develop
-bin/initialize_raspistillweb_db development.ini
+cd raspistillWeb
+../bin/python setup.py develop
+../bin/initialize_raspistillweb_db development.ini
 
 #Install BisqueAPI
 bin/pip install requests==2.7.0
