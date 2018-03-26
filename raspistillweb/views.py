@@ -35,6 +35,9 @@ from datetime import *
 from PIL import Image
 ##from bqapi.bqclass import fromXml
 #import bqapi as zzz
+from bqapi.comm import BQSession#, BQCommError
+from bqapi.util import save_blob
+from lxml import etree
 
 from time import time
 from socket import gethostname
