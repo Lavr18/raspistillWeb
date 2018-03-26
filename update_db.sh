@@ -2,8 +2,8 @@
 
 #Script to automatically initialise alembic to do the db migration
 
-# Location of raspistillWeb. Change if required.
-RASPISTILLWEB_LOCATION="/home/pi/phenotiki/env"
+cd ..
+RASPISTILLWEB_LOCATION=$(pwd)
 
 
 echo "location is $RASPISTILLWEB_LOCATION"

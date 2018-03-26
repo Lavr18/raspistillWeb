@@ -65,5 +65,6 @@ if [ "" == "$PKG_OK" ]; then
 fi
 
 # Start the raspistillWeb
-cd ~/phenotiki/env/raspistillWeb
+BASEDIR=$(pwd)
+cd $BASEDIR
 ../bin/pserve development.ini
