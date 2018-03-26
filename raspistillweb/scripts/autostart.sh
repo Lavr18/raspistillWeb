@@ -1,10 +1,10 @@
 #! /bin/sh
 # Run raspistillWeb and open the interface browser
 
-#xterm -hold -e "cd ~/phenotiki/env/raspistillWeb/
-#../bin/pserve development.ini" &
 
-xterm -hold -e "bash ~/phenotiki/env/raspistillWeb/start.sh" &
+echo $1
+
+xterm -hold -e " cd $1 && cd .. && bash start.sh" &
 
 
 sleep 8
