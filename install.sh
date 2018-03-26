@@ -12,6 +12,7 @@ cd raspistillWeb
 ../bin/python setup.py develop
 ../bin/initialize_raspistillweb_db development.ini
 
+cd ..
 #Install BisqueAPI
 bin/pip install requests==2.7.0
 bin/pip install BeautifulSoup4
